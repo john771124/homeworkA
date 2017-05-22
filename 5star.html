@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+    
+    <head>
+        
+        <meta charset = "UTF-8">
+        <title>作業star</title>
+        
+    </head>    
+        
+    <script>
+        function Button_click(){
+                var star = "";
+                var i, j = 0 ;
+                var s = document.getElementById("s");
+                
+            for(i=0;i<5;i++)
+            {
+                for(j=0;j<=i;j++)
+                {
+                  star += "*";
+                }
+                
+                 
+            star += "<br>";
+            }
+            s.innerHTML = star;
+        }
+    </script>
+    <body>
+        
+    <button onclick="Button_click()">輸出</button>
+    
+    <p id = "s" ></p>
+        
+        
+    </body>
+    
+</html>
